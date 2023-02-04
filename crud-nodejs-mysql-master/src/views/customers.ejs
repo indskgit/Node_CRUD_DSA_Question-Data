@@ -1,0 +1,95 @@
+<%- include("partials/_header") %>
+
+<div class="container mt-5 ">
+  <div class="col">
+  
+    <div class="col-md-5 ">
+      <div class="card-body ">
+        <form action="/add" method="POST">
+          <input
+            type="text"
+            name="qtitle"
+            placeholder="Title"
+            class="form-control mb-2"
+            autofocus
+          />
+          <input
+            type="text"
+            name="qDesc"
+            placeholder="Description"
+            class="form-control mb-2"
+          />
+          <input
+            type="text"
+            name="constraints"
+            placeholder="Constraints"
+            class="form-control mb-2"
+          />
+           <h1 style="color: aqua">Example</h1>
+          <input
+            type="text"
+            name="input"
+            placeholder="Input"
+            class="form-control mb-2"
+          />
+          <input
+            type="text"
+            name="output"
+            placeholder="Output"
+            class="form-control mb-2"
+          />
+           <input
+            type="text"
+            name="exp"
+            placeholder="Explaination"
+            class="form-control mb-2"
+          /> 
+          
+          <button type="submit" class="btn btn-info">save Question</button>
+        <h1></h1>
+        </form>
+      </div>
+  
+    <div class="col-md-7">
+      <table class="table table-dark table-bordered table-hover">
+        <thead>
+          <tr>
+            <td>n°</td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Constraints</td>
+             <td>Input</td>
+            <td>Output</td>
+            <td>Explaination</td> 
+            <td>Actions</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (customers) { %> <% for(var i = 0; i < customers.length; i++) {
+          %>
+          <tr>
+            <td><%= (i + 1) %></td>
+            <td><%= customers[i].qtitle %></td>
+            <td><%= customers[i].qDesc %></td>
+            <td><%= customers[i].constraints %></td>
+             <td><%= customers[i].input %></td>
+           <td><%= customers[i].output %></td>
+            <td><%= customers[i].exp %></td> 
+            <td class="d-flex gap-2">
+              <a href="/update/<%= customers[i].id %>" class="btn btn-info">
+                Edit
+              </a>
+              <a href="/delete/<%= customers[i].id %>" class="btn btn-danger">
+                Delete
+              </a>
+            </td>
+          </tr>
+          <% } %> <% } %>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/_footer") %>

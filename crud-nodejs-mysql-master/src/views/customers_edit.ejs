@@ -1,0 +1,59 @@
+<%- include("partials/_header") %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5 offset-md-3 card bg-dark sk">
+      <div class="card-body">
+        <form action="/update/<%= customer.id %>" method="POST">
+          <input
+            type="text"
+            name="qtitle"
+            value="<%= customer.qtitle %>"
+            placeholder="qtitle"
+            class="form-control mb-3"
+            autofocus
+          />
+          <input
+            type="text"
+            name="qDesc"
+            value="<%= customer.qDesc%>"
+            placeholder="Description"
+            class="form-control mb-3"
+          />
+           <input
+            type="text"
+            name="constraints"
+            value="<%= customer.constraints%>"
+            placeholder="Constraints"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="input"
+            value="<%= customer.input%>"
+            placeholder="Input"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="output"
+            value="<%= customer.output%>"
+            placeholder="Output"
+            class="form-control mb-3"
+          />
+          <input
+            type="text"
+            name="exp"
+            value="<%= customer.exp%>"
+            placeholder="Explaination"
+            class="form-control mb-3"
+          /> 
+
+          <button type="submit" class="btn btn-primary">save Question</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/_footer") %>

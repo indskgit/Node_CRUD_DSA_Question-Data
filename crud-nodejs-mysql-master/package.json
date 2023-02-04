@@ -1,0 +1,29 @@
+{
+  "name": "crud-nodejs-mysql",
+  "version": "1.0.0",
+  "description": "this is a basic application crud that uses nodejs in the backend, mysql as database.",
+  "main": "src/index.js",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "saurabh",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indskgit/CRUD_DSA_Questions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/indskgit/CRUD_DSA_Questions/issues"
+  },
+  "homepage": "https://github.com/indskgit/CRUD_DSA_Questions#readme"
+}
