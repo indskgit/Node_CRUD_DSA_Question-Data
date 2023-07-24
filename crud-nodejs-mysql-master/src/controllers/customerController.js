@@ -1,4 +1,7 @@
 import { pool } from "../db.js";
+import express from "express";
+const app = express();
+app.use(express.json());
 
 export const renderCustomers = async (req, res) => {
   const [rows] = await pool.query("SELECT * FROM customer");
@@ -33,4 +36,24 @@ export const deleteCustomer = async (req, res) => {
     res.json({ message: "Customer deleted" });
   }
   res.redirect("/");
+};
+
+// app.get('/search', function (req, res){
+
+//   var name = req.query.title;
+//   var sql = "SELECT * FROM customer WHERE qtitle LIKE '%"+name+"%'";
+//   // pool.query(sql, [name], function (err, result) {
+//   //   if (err) throw err;
+//   //   res.redirect("/search",{customer:result});
+//   // });
+//   pool.query(sql, function (err, result) {
+//     if (err) throw err;
+//     res.render(__dirname+"/",{customer:result});
+//   });
+// })
+
+export const search = async (req, res) => {
+  var {qtitle} = req.params;
+  const [rows] = await pool.query("SELECT * FROM customer Where qtitle = ?",[qtitle]);
+  res.render("customers", { customers: rows });
 };
