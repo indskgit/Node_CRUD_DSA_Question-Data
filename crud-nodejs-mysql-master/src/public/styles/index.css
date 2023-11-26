@@ -5,7 +5,7 @@ body {
     background: linear-gradient(to right,
     #141E30,
     #243B55);
-  background-size: absolute;
+  /* background-size: absolute; */
 }
 
 #dsaNav{
@@ -13,6 +13,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  
 }
 
 #inputdata{
@@ -21,6 +22,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: rgb(255, 247, 232);
 }
 #saveQuesBtn{
   background: linear-gradient(90deg, #f32170, 
@@ -28,6 +30,8 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  align-content: center;
+  justify-content: center;
 }
 #textExample{
   background: linear-gradient(90deg, #f32170,#ff6b08, #cf23cf, #eedd44);
@@ -35,6 +39,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
 }
+
 .form-control{
   background: linear-gradient(to right,
     #bedede, #3a5470);
@@ -44,10 +49,35 @@ body {
   background-clip: text;
   /* -webkit-background-clip: text; */
 }
+
 #saveBtn{
   background: linear-gradient(to right,
     #232526, #414345);
-    
+}
 
-  
+.upperCol{
+  background: linear-gradient(90deg, #f32170,#ff6b08,
+   #cf23cf, #eedd44);
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
+  /* -webkit-background-clip: text; */
+}
+
+.navbar{
+  background: linear-gradient(
+  #232526, #414345); 
+  display: flex;
+}
+.editSec{
+  background: #232526;
+  -webkit-text-fill-color: rgb(201, 24, 24);
+  background-image: url(blob.svg);
+}
+
+.home{
+  background-image: url(home1.png);
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  align-items: start;
 }

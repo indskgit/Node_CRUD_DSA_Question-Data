@@ -1,7 +1,7 @@
 {
   "name": "crud-nodejs-mysql",
   "version": "1.0.0",
-  "description": "this is a basic application crud that uses nodejs in the backend, mysql as database.",
+  "description": "this is a basic CRUD application that uses nodejs in the backend, mysql as database.",
   "main": "src/index.js",
   "type": "module",
   "dependencies": {
@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "node --watch src/index.js",
     "start": "node src/index.js"
+    
   },
   "keywords": [],
   "author": "saurabh",
