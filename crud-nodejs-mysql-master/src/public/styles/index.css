@@ -1,15 +1,14 @@
 body {
   /* background-image: url(blob.svg); */
-  /* background: linear-gradient(to right,
-    #232526, #414345); */
-    background: linear-gradient(to right,
-    #141E30,
-    #243B55);
+  background: linear-gradient(to right,
+    #232526, #24272b);
+    
   /* background-size: absolute; */
 }
 
 #dsaNav{
-  background: linear-gradient(to right, #f32170,#ff6b08, #cf23cf, #eedd44);
+  background: linear-gradient(#c7d1e5,
+  #ebedef);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -25,8 +24,8 @@ body {
   -webkit-text-fill-color: rgb(255, 247, 232);
 }
 #saveQuesBtn{
-  background: linear-gradient(90deg, #f32170, 
-  #ff6b08, #cf23cf, #eedd44);
+  background: linear-gradient(90deg, #12e844, 
+  #1fd83e, #04ea58);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -40,15 +39,7 @@ body {
   -webkit-background-clip: text;
 }
 
-.form-control{
-  background: linear-gradient(to right,
-    #bedede, #3a5470);
-    -webkit-text-fill-color: black;
-    /* background: rgb(136, 136, 138); */
-  /* -webkit-text-fill-color: transparent; */
-  background-clip: text;
-  /* -webkit-background-clip: text; */
-}
+
 
 #saveBtn{
   background: linear-gradient(to right,
@@ -70,6 +61,7 @@ body {
 }
 .editSec{
   background: #232526;
+  background-repeat: no-repeat;
   -webkit-text-fill-color: rgb(201, 24, 24);
   background-image: url(blob.svg);
 }
